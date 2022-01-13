@@ -3,11 +3,11 @@
 
 class Vector {
 public:
-    int x;
-    int y;
-    int z;
+    float x;
+    float y;
+    float z;
 
-    Vector(int x, int y, int z);
+    Vector(float x, float y, float z);
     Vector(const Vector &v);
     Vector operator + (const Vector &v) {
         return Vector(x + v.x, y + v.y, z + v.z);
@@ -15,6 +15,8 @@ public:
     Vector operator - (const Vector &v) {
         return Vector(x - v.x, y - v.y, z - v.z);
     }
+
+    float norm();
 };
 
 class Rect {

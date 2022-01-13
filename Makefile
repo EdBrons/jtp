@@ -9,9 +9,9 @@ jtp: main.o engine.o
 main.o: main.cpp
 	$(CC) $(CFLAGS) -c $^
 
-engine.o: engine.cpp
+engine.o: engine.cpp map.cpp
 	$(CC) $(CFLAGS) -c $^
 
 .PHONY: clean
 clean:
-	rm -f jtp main.o engine.o
+	rm -f jtp main.o engine.o map.o

@@ -6,6 +6,7 @@ public:
     int x;
     int y;
     int z;
+
     Vector(int x, int y, int z);
     Vector(const Vector &v);
     Vector operator + (const Vector &v) {
@@ -14,6 +15,14 @@ public:
     Vector operator - (const Vector &v) {
         return Vector(x - v.x, y - v.y, z - v.z);
     }
+};
+
+class Rect {
+public:
+    Vector pos;
+    Vector bounds;
+
+    Rect(Vector p, Vector b);
 };
 
 class World {

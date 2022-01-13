@@ -3,5 +3,6 @@
 
 int main(int argc, char *argv[]) {
     Engine e;
-    e.foo();
+    e.init();
+    e.quit();
 }

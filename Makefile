@@ -1,4 +1,4 @@
-CFLAGS=-Wall -pedantic -g
+CFLAGS=-Wall -pedantic -g -lSDL2
 CC=g++
 
 all: jtp

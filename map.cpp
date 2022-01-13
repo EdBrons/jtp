@@ -18,3 +18,12 @@ float Vector::sdistance_to(const Vector &v) {
 }
 
 Rect::Rect(Vector p, Vector b): pos(p), bounds(b) {}
+
+bool Rect::contains(const Vector &v) {
+    return v.x >= pos.x 
+        && v.y >= pos.y 
+        && v.z >= pos.z
+        && v.x <= pos.x + bounds.x
+        && v.y <= pos.y + bounds.y
+        && v.z <= pos.z + bounds.z;
+}

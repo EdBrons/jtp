@@ -28,6 +28,8 @@ public:
     Vector bounds;
 
     Rect(Vector p, Vector b);
+    /* NOTE: this includes the edges */
+    bool contains(const Vector &v);
 };
 
 class World {

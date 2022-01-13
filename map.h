@@ -17,7 +17,9 @@ public:
     }
 
     float norm();
+    float snorm();
     float distance_to(const Vector &v);
+    float sdistance_to(const Vector &v);
 };
 
 class Rect {
